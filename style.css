@@ -21,6 +21,9 @@ body{
 }
 .score h2{
     font-size: 2rem;
+    color: #a05131;
+    text-shadow: 0 0 4px brown;
+    letter-spacing: 4px;
 }
 .score p{
     text-align: center;
@@ -32,18 +35,22 @@ body{
 }
 .intro h1{
     font-size: 2.2rem;
+    color: #a05131;
+    text-shadow: 0 1px 4px brown;
 }
 .intro h2{
     font-size: 1.5rem;
 }
 button{
-    background-color: #f38a9c;
+    background-color: #a05131;
     font-weight: 800;
     padding: 0.5rem 3rem;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
+    box-shadow: 0 0 7px 2px #a05131;
+    outline: none;
 }
 .main{
     position: absolute;
@@ -65,6 +72,12 @@ button{
 }
 img{
     width:22rem;
+}
+#pChoice img{
+    transform: rotate(225deg);
+}
+#cChoice img{
+    transform: rotate(45deg);
 }
 .button-container{
     text-align: center;

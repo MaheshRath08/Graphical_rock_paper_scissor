@@ -5,7 +5,7 @@
     font-family: cursive;
 }
 body{
-    background-color: #2e1010;
+    background-color: #2b2b2b;
     color: #d1d1d1;
 }
 .container{
@@ -21,8 +21,8 @@ body{
 }
 .score h2{
     font-size: 2rem;
-    color: #1e7e76;
-    text-shadow: 0 0 4px rgb(5, 78, 78);
+    color: #2ba198;
+    text-shadow: 2px 2px 3px #00ffff;
     letter-spacing: 4px;
 }
 .score p{
@@ -35,8 +35,8 @@ body{
 }
 .intro h1{
     font-size: 2.2rem;
-    color: #1e7e76;
-    text-shadow: 0 1px 4px rgb(0, 94, 94);
+    color: #2ba198;
+    text-shadow: 2px 2px 4px #009797;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
 }
@@ -44,16 +44,17 @@ body{
     font-size: 1.5rem;
 }
 button{
-    background-color: #1e7e76;
+    background-color: #2ba198;
     font-weight: 800;
     padding: 0.5rem 3rem;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
-    box-shadow: 0 0 7px 2px #1e7e76;
+    box-shadow: 0 0 7px 2px #2ba198;
     outline: none;
     font-size: 1.3rem;
+    color: #2b2b2b;
 }
 button:hover{
     transform: scale(1.12);

@@ -2,9 +2,10 @@ let start = document.getElementById("start")
 let intro = document.querySelector(".intro")
 let main = document.querySelector(".main")
 
-let player = document.getElementById("pChoice")
-let comp = document.getElementById("cChoice")
+let player = document.querySelector(".pChoice")
+let comp = document.querySelector(".cChoice")
 let btn = document.querySelectorAll(".choice")
+let hands = document.querySelectorAll("hands img")
 
 let messageEl = document.getElementById("message")
 let message = "WELCOME"
@@ -24,11 +25,13 @@ start.addEventListener("click", ()=>{
 btn.forEach(e=>{
     e.addEventListener("click", ()=>{
         let cGuess = compGuess()
-        game(e.textContent, cGuess)
-
-        comp.innerHTML = `<img src="/assets/${cGuess}.png">`
-        player.innerHTML = `<img src="/assets/${e.textContent}.png">`
         
+        game(e.textContent, cGuess)
+        
+        comp.src = `/assets/${cGuess}.png`
+        player.src = `/assets/${e.textContent}.png`
+        addAnim()
+
     })
 })
 
@@ -70,4 +73,14 @@ function game(p,c){
     messageEl.textContent = message
     pScoreEl.textContent = pScore
     cScoreEl.textContent = cScore
+}
+
+function addAnim(){
+    player.classList.add("animP")
+    comp.classList.add("animC")
+    
+    setTimeout(() => {
+        player.classList.remove("animP")
+        comp.classList.remove("animC")    
+    }, 300);
 }

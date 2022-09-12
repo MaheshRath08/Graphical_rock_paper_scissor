@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper and Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -22,16 +23,16 @@
     <section class="intro container" id="intro">
         <h1>Hello Welcome to Rock, Paper and Scissors</h1>
         <h2>Press START to play the game</h2>
-        <button id="start">START</button>
+        <button id="start"><i class="fa-regular fa-circle-play"></i> START</button>
     </section>
     <section class="main fadeOut">
         <h1 id="message">WELCOME</h1>
         <div class="choice-box">
-            <div id="pChoice">
-                <img src="/assets/rock.png">
+            <div>
+                <img class="pChoice hands" src="/assets/rock.png">
             </div>
-            <div id="cChoice">
-                <img src="/assets/rock.png">
+            <div>
+                <img class="cChoice hands" src="/assets/rock.png">
             </div>
         </div>
         <div class="button-container">

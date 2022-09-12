@@ -21,13 +21,13 @@ body{
 }
 .score h2{
     font-size: 2rem;
-    color: #a05131;
-    text-shadow: 0 0 4px brown;
+    color: #1e7e76;
+    text-shadow: 0 0 4px rgb(5, 78, 78);
     letter-spacing: 4px;
 }
 .score p{
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-top: 1rem;
 }
 .intro{
@@ -35,22 +35,31 @@ body{
 }
 .intro h1{
     font-size: 2.2rem;
-    color: #a05131;
-    text-shadow: 0 1px 4px brown;
+    color: #1e7e76;
+    text-shadow: 0 1px 4px rgb(0, 94, 94);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
 }
 .intro h2{
     font-size: 1.5rem;
 }
 button{
-    background-color: #a05131;
+    background-color: #1e7e76;
     font-weight: 800;
     padding: 0.5rem 3rem;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
-    box-shadow: 0 0 7px 2px #a05131;
+    box-shadow: 0 0 7px 2px #1e7e76;
     outline: none;
+    font-size: 1.3rem;
+}
+button:hover{
+    transform: scale(1.12);
+}
+button:active{
+    transform: scale(0.92);
 }
 .main{
     position: absolute;
@@ -69,15 +78,13 @@ button{
 }
 .choice-box div{
     margin: 0 5rem;
+    position: relative;
 }
 img{
     width:22rem;
 }
-#pChoice img{
-    transform: rotate(225deg);
-}
-#cChoice img{
-    transform: rotate(45deg);
+.pChoice{
+    transform: rotateY(180deg);
 }
 .button-container{
     text-align: center;
@@ -86,4 +93,28 @@ img{
 }
 .fadeOut{
     visibility: hidden;
+}
+.animP{
+    animation: shakeP 0.3s linear;
+}
+.animC{
+    animation: shakeC 0.3s linear;
+}
+
+@keyframes shakeP {
+    0%{transform: rotateY(180deg) translateY(-1rem);}
+    20%{transform: rotateY(180deg) translateY(1rem);}
+    40%{transform: rotateY(180deg) translateY(-1rem);}
+    60%{transform: rotateY(180deg) translateY(1rem);}
+    80%{transform: rotateY(180deg) translateY(-1rem);}
+    100%{transform: rotateY(180deg) translateY(0);}
+}
+
+@keyframes shakeC {
+    0%{transform: translateY(-1rem);}
+    20%{transform: translateY(1rem);}
+    40%{transform: translateY(-1rem);}
+    60%{transform: translateY(1rem);}
+    80%{transform: translateY(-1rem);}
+    100%{transform: translateY(0);}
 }

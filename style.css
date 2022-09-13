@@ -22,7 +22,7 @@ body{
 .score h2{
     font-size: 2rem;
     color: #2ba198;
-    text-shadow: 2px 2px 3px #00ffff;
+    text-shadow: 2px 1px 3px #00ffff;
     letter-spacing: 4px;
 }
 .score p{
@@ -36,9 +36,10 @@ body{
 .intro h1{
     font-size: 2.2rem;
     color: #2ba198;
-    text-shadow: 2px 2px 4px #009797;
+    text-shadow: 2px 1px 2px #009797;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
+    letter-spacing: 2px;
 }
 .intro h2{
     font-size: 1.5rem;
@@ -51,7 +52,7 @@ button{
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
-    box-shadow: 0 0 7px 2px #2ba198;
+    box-shadow: 0 0 5px #8ec7e2;
     outline: none;
     font-size: 1.3rem;
     color: #2b2b2b;

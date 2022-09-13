@@ -82,5 +82,5 @@ function addAnim(){
     setTimeout(() => {
         player.classList.remove("animP")
         comp.classList.remove("animC")    
-    }, 300);
+    }, 500);
 }

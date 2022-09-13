@@ -97,10 +97,10 @@ img{
     visibility: hidden;
 }
 .animP{
-    animation: shakeP 0.3s linear;
+    animation: shakeP 0.5s linear;
 }
 .animC{
-    animation: shakeC 0.3s linear;
+    animation: shakeC 0.5s linear;
 }
 
 @keyframes shakeP {
